@@ -13,6 +13,6 @@ Set the GOPATH environment variable, and add GOPATH/bin to PATH.
     
 Clone the eagameslib-api repo into the place that Go expects to find it.
 
-  mkdir -p $GOPATH/src/github.com
-  cd $GOPATH/src/github.com
-  git clone 
+    mkdir -p $GOPATH/src/github.com
+    cd $GOPATH/src/github.com
+    git clone https://github.com/JacyGao/eagameslib-api.git
