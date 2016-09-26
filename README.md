@@ -81,13 +81,13 @@ Add a new title.
     
 <b>Sample Unsuccessful Response:</b>
 
-        {
-            "Success": false,
-            "Body": {
-                "id": "avkal4sa9j2t4ihg1fi0",
-                "title": "Need for speed",
-                "created": "2016-09-26T14:56:51.384081986+10:00"
-            },
-            "Error": "Title name already exists"
-        }
+    {
+        "Success": false,
+        "Body": {
+	    "id": "avkal4sa9j2t4ihg1fi0",
+	    "title": "Need for speed",
+	    "created": "2016-09-26T14:56:51.384081986+10:00"
+        },
+        "Error": "Title name already exists"
+    }
         
