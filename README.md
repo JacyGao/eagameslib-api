@@ -29,9 +29,9 @@ Build all binaries in developmenet environment and kick off the service by runni
     
 <b>Security</b>
 
-Authentication has not been implemented due to time constraints. To ensure security, implement an access token tier such as JWT (https://jwt.io/)
+<b>Authentication</b> has not been implemented due to time constraints. To ensure security, implement an access token tier such as JWT (https://jwt.io/)
 
-CORS can also be strictly defined to grant access to specific domains. CORS can be defined in /config location
+<b>CORS</b> can also be strictly defined to grant access to specific domains. CORS can be defined in /config location
 
 More security? Implement refresh token used together with access token (https://auth0.com/docs/tokens/refresh-token)
 
