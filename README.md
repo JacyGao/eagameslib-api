@@ -28,9 +28,9 @@ Build all binaries in developmenet environment and kick off the service by runni
     tools/all.sh
     
     
-<h2>API Documentation</h2>
+<h1>API Documentation</h1>
 
-<b>GET (/title)</b>
+<h2>GET (/title)</h2>
 
 List all existing titles.
 
@@ -53,7 +53,7 @@ List all existing titles.
         "Error": ""
     }
 
-<b>POST (/title)</b>
+<h2>POST (/title)</h2>
 
 Add a new title.
 
