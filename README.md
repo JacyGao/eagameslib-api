@@ -1,7 +1,7 @@
 # eagameslib-api
 A demo API for eagameslib written in Golang
 
-You can find a front-end demo using this API here: https://github.com/JacyGao/eagameslib-api
+You can find a front-end demo using this API here: https://github.com/JacyGao/eagameslib
 
 <b>One-time setup</b>
 
