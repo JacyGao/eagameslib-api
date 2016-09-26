@@ -1,6 +1,8 @@
 # eagameslib-api
 A demo API for eagameslib written in Golang
 
+You can find a front-end demo using this API here: https://github.com/JacyGao/eagameslib-api
+
 <b>One-time setup</b>
 
 Install go: - https://golang.org/doc/install - Make sure you have version 1.6 or later for vendor folder support
