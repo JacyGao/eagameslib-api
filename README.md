@@ -27,7 +27,20 @@ Build all binaries in developmenet environment and kick off the service by runni
 
     tools/all.sh
     
-    
+<b>Security</b>
+
+Authentication has not been implemented due to time constraints. To ensure security, implement an access token tier such as JWT (https://jwt.io/)
+
+CORS can also be strictly defined to grant access to specific domains. CORS can be defined in /config location
+
+More security? Implement refresh token used together with access token (https://auth0.com/docs/tokens/refresh-token)
+
+<b>Test</b>
+
+<b>Unit test</b> has not been implemented due to time constraints. However it must be implemented to prevent regression in further development
+
+<b>Integration test</b> has not been implemented due to time constraints. However it's recommended to be implemented to ensure the APIs are serving properly
+
 <h1>API Documentation</h1>
 
 <h2>GET (/title)</h2>
