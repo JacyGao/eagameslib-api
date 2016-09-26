@@ -27,3 +27,28 @@ Build all binaries in developmenet environment and kick off the service by runni
 
     tools/all.sh
     
+    
+<h2>API Documentation</h2>
+
+<b>GET (/title)</b>
+
+List all existing titles.
+
+<b>Sample successful response:</b>
+
+    {
+        "Success": true,
+        "Body": [
+            {
+                "id": "avjmdick5bn6bia5v4o0",
+                "title": "Real Racing",
+                "created": "2016-09-25T15:55:21.08610998+10:00"
+            },
+            {
+                "id": "avjmehck5bn6ccvlrdp0",
+                "title": "Real Racing 2",
+                "created": "2016-09-25T15:57:25.637563598+10:00"
+            }
+        ],
+        "Error": ""
+    }
