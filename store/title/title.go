@@ -14,32 +14,33 @@ type Title struct {
     Created time.Time `json:"created"`
 }
 
-const Store = "title/title.json"
+// Here we are using a json file as our "Database" for this demo
+// A DB instance can be defined to replace the json storage
+const Store = "store/title/title.json"
 
+// Insert a new title to DB
 func InsertTitle(title Title) error {
 
     var titles []Title
     
-    // TODO: remove hardcoded path
-    absPath, _ := filepath.Abs("src/github.com/eagames/store/title/title.json")
+    // Get Store aboslute path
+    absPath, _ := filepath.Abs(Store)
 
-    // Maybe marshal and unmarshal should be in seperate file
+    // Reading content from DB
     contents, err := ioutil.ReadFile(absPath)
+    if err != nil {
+        panic(err)
+    }
     if err := json.Unmarshal(contents, &titles); err != nil {
         panic(err)
     }
 
-    // check if title already exists
-    if(len(title.Title) == 0){
-        return errors.Wrap("Title name is mandatory", 0)
-    }
-    // TODO: make it a seperate function
-    for _, v := range titles {
-        if v.Title == title.Title {
-            return errors.Wrap("Title name already exists", 0)
-        }
+    // Validate title
+    if err := validateTitle(title.Title, titles); err != nil {
+        return errors.Wrap(err, 0)
     }
 
+    // Append new title to DB
     titles = append(titles, title);
     data, err := json.Marshal(titles); 
     if err != nil {
@@ -51,16 +52,25 @@ func InsertTitle(title Title) error {
     return nil
 }
 
+// Find all titles in DB
 func FindTitles() ([]Title, error) {
-    absPath, _ := filepath.Abs("src/github.com/eagames/store/title/title.json")
+
+    var titles []Title
+
+    // Get Store aboslute path
+    absPath, _ := filepath.Abs(Store)
+
+    // Reading content from DB
 	contents, err := ioutil.ReadFile(absPath)
     if err != nil {
         panic(err)
     }
+
+    // If empty content
     if len(contents) == 0 {
         return []Title{}, nil
     }
-    var titles []Title
+
     if err := json.Unmarshal(contents, &titles); err != nil {
         panic(err)
     }

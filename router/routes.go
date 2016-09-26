@@ -1,6 +1,7 @@
-package main
+package router
 
 import "net/http"
+import "github.com/eagames/handler"
 
 type Route struct {
     Name        string
@@ -16,18 +17,18 @@ var routes = Routes{
         "Index",
         "GET",
         "/",
-        Index,
+        handler.Index,
     },
     Route{
         "TitleGet",
         "GET",
         "/title",
-        TitleGet,
+        handler.TitleGet,
     },
     Route{
         "TitlePost",
         "POST",
         "/title",
-        TitlePost,
+        handler.TitlePost,
     },
 }

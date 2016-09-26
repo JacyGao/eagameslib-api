@@ -1,4 +1,4 @@
-package main
+package logger
 
 import (
     "log"
@@ -6,6 +6,7 @@ import (
     "time"
 )
 
+// Custom Logger to print out HTTP Requests Info
 func Logger(inner http.Handler, name string) http.Handler {
     return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
         start := time.Now()
