@@ -19,11 +19,11 @@ Clone the eagameslib-api repo into the place that Go expects to find it.
 
 <b>Kick off the service</b>
 
-Make sure you are in the service base location
+Make sure you are in the service base location:
 
     cd $GOPATH/src/github.com/eagames
     
-Build all binaries in developmenet environment and kick off the service by running
+Build all binaries in developmenet environment and kick off the service by running:
 
     tools/all.sh
     
