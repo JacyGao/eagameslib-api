@@ -39,9 +39,11 @@ More security? Implement refresh token used together with access token (https://
 
 <b>Test</b>
 
-<b>Unit test</b> has not been implemented due to time constraints. However it must be implemented to prevent regression in further development
+<b>Unit test</b> has not been implemented due to time constraints. However it must be implemented to prevent regression in further development.
 
-<b>Integration test</b> has not been implemented due to time constraints. However it's recommended to be implemented to ensure the APIs are serving properly
+<b>Integration test</b> has not been implemented due to time constraints. However it's recommended to be implemented to ensure the APIs are serving properly.
+
+The offcial golang testing package: (https://golang.org/pkg/testing/)
 
 <h1>API Documentation</h1>
 
