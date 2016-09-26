@@ -34,7 +34,7 @@ Build all binaries in developmenet environment and kick off the service by runni
 
 List all existing titles.
 
-<b>Sample successful response:</b>
+<b>Sample Successful Response:</b>
 
     {
         "Success": true,
@@ -52,3 +52,42 @@ List all existing titles.
         ],
         "Error": ""
     }
+
+<b>POST (/title)</b>
+
+Add a new title.
+
+<b>Parameters:</b>
+    
+    title   |   string  |   required
+    
+<b>Sample Json body</b>
+
+    {
+	    "title":"Need for speed"
+    }
+    
+<b>Sample Successful Response:</b>
+
+    {
+        "Success": true,
+        "Body": {
+            "id": "avkakpsa9j2t4ihg1fhg",
+            "title": "Need for speed",
+            "created": "2016-09-26T14:56:07.040516966+10:00"
+        },
+        "Error": ""
+    }
+    
+<b>Sample Unsuccessful Response:</b>
+
+        {
+            "Success": false,
+            "Body": {
+                "id": "avkal4sa9j2t4ihg1fi0",
+                "title": "Need for speed",
+                "created": "2016-09-26T14:56:51.384081986+10:00"
+            },
+            "Error": "Title name already exists"
+        }
+        
