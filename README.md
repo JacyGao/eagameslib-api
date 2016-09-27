@@ -19,6 +19,12 @@ Clone the eagameslib-api repo into the place that Go expects to find it.
     cd $GOPATH/src/github.com
     git clone https://github.com/JacyGao/eagameslib-api.git
 
+Install the package dependencies:
+
+	cd $GOPATH/src/github.com/eagameslib-api
+	git submodule init
+	git submodule update
+	
 <b>Kick off the service</b>
 
 Make sure you are in the service base location:
