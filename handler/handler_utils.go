@@ -1,23 +1,23 @@
 package handler
 
 import (
+	"github.com/eagames/config"
+	"github.com/rs/xid"
 	"net/http"
-    "github.com/rs/xid"
-    "github.com/eagames/config"
 )
 
 type JsonResponse struct {
-    Success bool
-    Body   interface{}
-    Error string
+	Success bool
+	Body    interface{}
+	Error   string
 }
 
 type TitleName struct {
-    Name string `json:"title"`
+	Name string `json:"title"`
 }
 
-func prepareResponse(success bool, message interface{}, error string) JsonResponse{
-    return JsonResponse{success, message, error}
+func prepareResponse(success bool, message interface{}, error string) JsonResponse {
+	return JsonResponse{success, message, error}
 }
 
 func setCors(w http.ResponseWriter) {
@@ -25,11 +25,11 @@ func setCors(w http.ResponseWriter) {
 }
 
 func setJsonHeader(w http.ResponseWriter) {
-    w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-    w.WriteHeader(http.StatusOK)
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
 }
 
 func generateUniqueId() string {
-    guid := xid.New()
-    return guid.String()
+	guid := xid.New()
+	return guid.String()
 }
