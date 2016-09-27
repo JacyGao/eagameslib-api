@@ -23,7 +23,7 @@ Clone the eagameslib-api repo into the place that Go expects to find it.
 
 Make sure you are in the service base location:
 
-    cd $GOPATH/src/github.com/eagames
+    cd $GOPATH/src/github.com/eagameslib-api
     
 Build all binaries in developmenet environment and kick off the service by running:
 
