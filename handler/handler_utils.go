@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/eagames/config"
+	"github.com/eagameslib-api/config"
 	"github.com/rs/xid"
 	"net/http"
 )

@@ -2,8 +2,8 @@
 package main
 
 import (
-	"github.com/eagames/config"
-	"github.com/eagames/router"
+	"github.com/eagameslib-api/config"
+	"github.com/eagameslib-api/router"
 	"log"
 	"net/http"
 )

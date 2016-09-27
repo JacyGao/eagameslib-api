@@ -6,7 +6,7 @@ package handler
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/eagames/store/title"
+	"github.com/eagameslib-api/store/title"
 	"net/http"
 	"time"
 )

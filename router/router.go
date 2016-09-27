@@ -1,7 +1,7 @@
 package router
 
 import (
-	"github.com/eagames/logger"
+	"github.com/eagameslib-api/logger"
 	"github.com/gorilla/mux"
 	"net/http"
 )

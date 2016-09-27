@@ -1,7 +1,7 @@
 package router
 
 import "net/http"
-import "github.com/eagames/handler"
+import "github.com/eagameslib-api/handler"
 
 type Route struct {
 	Name        string
